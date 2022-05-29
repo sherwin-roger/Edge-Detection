@@ -8,34 +8,19 @@ Anaconda - Python 3.7
 
 ## Algorithm:
 ### Step1:
-Import the necessary modules.
-<br>
-
+Import the required packages.
 
 ### Step2:
-For performing edge detection on a image.
-
-* Sobel
-```
-sobelx=cv2.Sobel(img,cv2.CV_64F,1,0,5)
-sobely=cv2.Sobel(img,cv2.CV_64F,0,1,5)
-sobelxy=cv2.Sobel(img,cv2.CV_64F,1,1,5)
-```
-
-* Laplacian
-```
-Laplacian=cv2.Laplacian(img,cv2.CV_64F)
-```
-
-* Canny
-```
-canny=cv2.Canny(img,120,150)
-```
-<br>
+Read the image and cconvert into gray image.
 
 ### Step3:
-Display all the images with their respective edge detected images.
-<br>
+Remove the noise of the image using gaussian operator.
+
+### Step4:
+Find the sobel edge,laplacian edge,canny edge using the built in modules available in opencv.
+
+### Step5:
+Plot the edged image using matplotlib.
  
 ## Program:
 
